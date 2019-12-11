@@ -42,7 +42,7 @@ module JekyllDefaultLayout
     # What layout is appropriate for this document, if any
     # rubocop:disable Metrics/PerceivedComplexity
     def layout_for(document)
-      if index?(document) && layout_exists?("slides")
+      if layout_exists?("slides")
         "slides"
       elsif page?(document) && layout_exists?("page")
         "page"
